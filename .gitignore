@@ -1,0 +1,7 @@
+node_modules
+.ds_store
+ooltsconfig
+yarn.lock
+p5-typescript-demo.gif
+.idea
+package-lock.json

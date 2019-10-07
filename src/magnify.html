@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+    body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    }
+    #imageBox{
+    position: relative;
+    width: 1300px;
+
+
+
+
+    }
+    #imageBox>img.bgImg{
+    width: 100%;
+    position: relative;
+    }
+    #hideImgt{
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.95);
+    transform: translate(-50%,-50%);
+    justify-content: center;
+    align-items: center;
+    clip-path: circle(20% at 50% 50%);
+    display: none;
+
+    }
+    #canvas{
+
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    }
+    #hideImgt>img{
+    width: auto;
+
+
+    }
+
+    </style>
+    </head>
+    <body>
+    <div id="imageBox">
+<img class="bgImg" src="n.jpg"/>
+        <img  style="display: none;" id="scream" src="n.jpg">
+<canvas id="canvas"></canvas>
+    </div>
+
+
+</body>
+</html>
